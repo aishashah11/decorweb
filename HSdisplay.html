@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeStyler</title>
+    <link rel="icon" type="image/x-icon" href="css/img/HS favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/HSdisplay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- header-->
+
+    <header class="header">
+        <a href="HShome.html" class="logo"><i class="fa-solid fa-store" style="margin-right: 3px;"></i> HomeStyler </a>
+
+        <nav class="navv">
+            <a href="HShome.html">Home</a>
+            <a href="HSabout.html">About </a>
+
+            <li class="dropdown">
+                <a href="HSdisplay.html" class="dropbtn">Display<i class="fa-duotone fa-solid fa-caret-down"
+                        style="color:var(--main-color);font-size: 13px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="HSaddcard.html">Furniture Categorie's</a>
+                    <a href="HSaddcard.html">Lighting Categorie's</a>
+                    <a href="HSaddcard.html">Decor Categorie's</a>
+                    <a href="HSaddcard.html">Kitchen Categorie's</a>
+                    <a href="HSaddcard.html">Bathroom Categorie's</a>
+                </div>
+            </li>
+
+            <a href="HSfeedback.html">Feedback</a>
+            <a href="HScontact.html">Contact</a>
+        </nav>
+
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here..." id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="ri-search-line"></div>
+            <a href="HSaddcard.html">
+                <div id="cart-btn" class="ri-shopping-cart-line"></div>
+            </a>
+            <div id="login-btn" class="ri-user-line"></div>
+            <div id="menu-btn" class="ri-menu-line"></div>
+        </div>
+    </header>
+
+
+
+
+    <!-- closer btn  -->
+
+    <div id="closer" class="ri-close-line"></div>
+
+
+
+    <!-- navbar sidebar -->
+
+    <nav class="navbar" style="background-image: url(css/img/login.png); background-size: cover;">
+        <a href="HShome.html">Home</a>
+        <a href="HSabout.html">About</a>
+        <a href="HSdisplay.html">Display</a>
+        <a href="HSfeedback.html">Feedback</a>
+        <a href="HScontact.html">contact</a>
+    </nav>
+
+
+
+    <!-- login form start  -->
+
+    <div class="login-form" style="background-image: url(css/img/login.png); background-size: cover;">
+        <form action="#">
+            <h3>Login Form</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+    </div>
+
+    <!-- cards work -->
+    <div class="card-container">
+        <div class="card">
+            <img src="css/img/pp1.jfif" alt="Worker Profile 1">
+            <div class="info">
+                <h3>Emma</h3>
+                <p>Experience: 5 years </p>
+                <label for="rating1">Interior designer</label>
+                <select id="rating1">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button onclick="hireWorker('John Doe')">Hire</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="css/img/pp2.jpg" alt="Worker Profile 2">
+            <div class="info">
+                <h3>Liam</h3>
+                <p>Experience: 3 years </p>
+                <label for="rating2">Interior designer</label>
+                <select id="rating2">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button onclick="hireWorker('Jane Smith')">Hire</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="css/img/pp3.jfif" alt="Worker Profile 3">
+            <div class="info">
+                <h3>Olivia</h3>
+                <p>Experience: 4 years </p>
+                <label for="rating3">Interior designer</label>
+                <select id="rating3">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button onclick="hireWorker('Mike Johnson')">Hire</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="css/img/pp4.jfif" alt="Worker Profile 1">
+            <div class="info">
+                <h3>Noah</h3>
+                <p>Experience: 5 years </p>
+                <label for="rating1">Interior designer</label>
+                <select id="rating1">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button onclick="hireWorker('John Doe')">Hire</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="css/img/pp5.jfif" alt="Worker Profile 2">
+            <div class="info">
+                <h3>Ava</h3>
+                <p>Experience: 3 years </p>
+                <label for="rating2">Interior designer</label>
+                <select id="rating2">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button onclick="hireWorker('Jane Smith')">Hire</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="css/img/pp6.jfif" alt="Worker Profile 3">
+            <div class="info">
+                <h3>Mike </h3>
+                <p>Experience: 4 </p>
+                <label for="rating3">Interior designer</label>
+                <select id="rating3">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button onclick="hireWorker('Mike Johnson')">Hire</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="popup" class="popup">
+        <p id="popup-text"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+
+    <!-- bg banner -->
+    <section class="bg">
+        <div class="bg-text">
+            <h6>SUMMER ON SALE</h6>
+            <h4>10% OFF <br> NEW ARRIVAL</h4>
+            <a href="HSaddcard.html" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+     
+    
+
+
+
+    <!-- footer section start  -->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>HomeStyler</h3>
+                <a href="HShome.html"> <i class="ri-arrow-right-line"></i> Home </a>
+                <a href="HSabout.html"> <i class="ri-arrow-right-line"></i> About </a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Display </a>
+                <a href="HSfeedback.html"> <i class="ri-arrow-right-line"></i> Feedback </a>
+                <a href="HScontact.html"> <i class="ri-arrow-right-line"></i> Contact </a>
+
+            </div>
+
+            <div class="box">
+                <h3>Our Categorie's</h3>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Furniture Categorie's </a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Lighting Categorie's</a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Decor Categorie's </a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Kitchen Categorie's</a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i> Bathroom Categorie's</a>
+            </div>
+
+            <div class="box">
+                <h3>Contect Us</h3>
+                <a href="https://www.facebook.com/"> <i class="ri-facebook-fill"></i> Facebook </a>
+                <a href="https://twitter.com/"> <i class="ri-twitter-fill"></i> twitter </a>
+                <a href="https://www.instagram.com/"> <i class="ri-instagram-fill"></i> Instagram </a>
+                <a href="https://www.pinterest.com/"> <i class="ri-pinterest-fill"></i> Pinterest </a>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63483831.129116446!2d37.28250794999999!3d13.79420660000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bb81b87dcb525b1%3A0x393c32d308f695e2!2sHomeStyler!5e0!3m2!1sen!2s!4v1727097114746!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </form>
+
+        </div>
+    </section>
+
+    <section class="credit">
+        <h1 style="margin-bottom: 20px;">Thank you</h1>
+        "for visiting HomeStyler! We're always delighted to have you <br>here and hope you find every idea you need to
+        style your dream home!"
+    </section>
+    <!-- footer section end  -->
+
+
+    <!-- custom js file link  -->
+    <script src="js/data 2.js"></script>
+    <script src="js/HShome.js"></script>
+
+</body>
+
+</html>

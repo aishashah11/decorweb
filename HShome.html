@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECOR</title>
+    <link rel="icon" type="image/x-icon" href="css/img/HS favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/HShome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- header-->
+
+    <header class="header">
+        <a href="HShome.html" class="logo"><i class="fa-solid fa-store" style="margin-right: 3px;"></i> DECOR </a>
+
+        <nav class="navv">
+            <a href="HShome.html">Home</a>
+            <a href="HSabout.html">About  </a>
+
+            <li class="dropdown">
+                <a href="HSdisplay.html" class="dropbtn">Display<i class="fa-duotone fa-solid fa-caret-down"style="color:var(--main-color);font-size: 13px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="HSaddcard.html">Furniture Categorie's</a>
+                    <a href="HSaddcard.html">Lighting Categorie's</a>
+                    <a href="HSaddcard.html">Decor Categorie's</a>
+                    <a href="HSaddcard.html">Kitchen Categorie's</a>
+                    <a href="HSaddcard.html">Bathroom Categorie's</a>
+                </div>
+            </li>
+
+            <a href="HSfeedback.html">Feedback</a>
+            <a href="HScontact.html">Contact</a>
+        </nav>
+
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here..." id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="ri-search-line"></div>
+            <a href="HSaddcard.html"> <div id="cart-btn" class="ri-shopping-cart-line"></div></a>
+            <div id="login-btn" class="ri-user-line"></div>
+            <div id="menu-btn" class="ri-menu-line"></div>
+        </div>
+    </header>
+
+  
+
+
+    <!-- closer btn  -->
+
+    <div id="closer" class="ri-close-line"></div>
+
+
+
+    <!-- navbar sidebar -->
+
+    <nav class="navbar" style="background-image: url(css/img/login.png); background-size: cover;">
+        <a href="HShome.html">Home</a>
+        <a href="HSabout.html">About</a>
+        <a href="HSdisplay.html">Display</a>
+        <a href="HSfeedback.html">Feedback</a>
+        <a href="HScontact.html">contact</a>
+    </nav>
+
+
+
+ <!-- login form start  -->
+
+ <div class="login-form" style="background-image: url(css/img/login.png); background-size: cover;">
+    <form action="#">
+        <h3>Login Form</h3>
+        <input type="email" placeholder="enter your email" class="box">
+        <input type="password" placeholder="enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+        </div>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</div>
+
+   
+
+    <!-- home section starts  -->
+    <section class="home" style="background-image: url(css/img/1.jpg); background-size: cover;height: 100%;">
+        <div class="slides-container" >
+
+            <div class="slide active">
+                <div class="content">
+                    <span>New Arrival's</span>
+                    <h3>Flexible Chair</h3>
+                    <p> Explore our latest arrivals and breathe new life into your home with elegant, high-quality furniture <br>and décor. From stunning statement pieces to timeless classics, our collection is designed to inspire <br> and elevate every room with style and sophistication.</p>
+                    <a href="HSaddcard.html" class="btn" style="margin-top: 30px;">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>New Arrival's</span>
+                    <h3>Ottoman's Chair</h3>
+                    <p>Transform your home with the latest trends in furniture and décor, where modern design meets timeless <br>comfort. Elevate every corner of your living space with pieces crafted to reflect your unique style, blending <br> elegance and functionality effortlessly.</p>
+                    <a href="HSaddcard.html" class="btn" style="margin-top: 30px;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div id="slide-next" onclick="next()" class="ri-arrow-right-line"></div>
+        <div id="slide-prev" onclick="prev()" class="ri-arrow-left-line"></div>
+    </section>
+
+
+
+    <!-- text video area -->
+    <section class="section about-1">
+        <div class="container">
+            <h2 class="section-title">Decor Store</h2>
+
+            <p class="section-text" style="font-size: 15px;">
+                "Welcome to HomeStyler, where we bring your style to life. From cozy   corners to complete home <br>
+                makeovers, we help you create spaces  that reflect who you are. Let us turn your vision <br> into
+                reality, one beautiful room at a time."
+            </p>
+
+            <div class="about-card">
+                <figure class="card-banner" style="--width: 1170; --height: 450;margin-top: 40px;">
+                    <video class="video-slider" src="css/img/video.mp4" autoplay muted loop
+                        style="border-radius: 15px;"></video>
+                </figure>
+            </div>
+    </section>
+ 
+
+    <!-- bg banner-->
+    <section class="bg">
+        <div class="bg-text">
+            <h6>SUMMER ON SALE</h6>
+            <h4>50% & 10% OFF <br> NEW ARRIVAL</h4>
+            <a href="HSaddcard.html" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+
+
+    <!---gallery-->
+    <section class="section product">
+        <div class="container">
+            <div class="row" id="carddisplay"></div>
+            <div class="title-wrapper">
+                <h2 class="h2 section-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                    data-aos-delay="300" data-aos-offset="0" style="color: #341c02;">Product Gallery</h2>
+                <ul class="filter-btn-list">
+
+                    <li class="filter-btn-item">
+                        <a href="HSdisplay.html"><button class="filter-btn active" data-filter-btn="all">All Categorie's here</button></a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="head">
+                <div class="container-5">
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g1.jpg" style="margin-top: 8px; border-radius: 10px;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g2.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g3.jpg" style="margin-top: 8px;border-radius: 10px;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g4.jpg" style="margin-top: 8px;border-radius: 10px;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g5.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g6.jpg" style="margin-top: 8px;border-radius: 10px;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g7.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g8.jpg" style="margin-top: 8px;border-radius: 10px;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g9.jpg" style="margin-top: 8px;border-radius: 10px;">
+                    </div>
+
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g10.jpg" style="margin-top: 8px;border-radius: 10px; height: 380px;width: 100%;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g11.jpg" style="margin-top: 8px;border-radius: 10px;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g12.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g13.jpg" style="margin-top: 8px;border-radius: 10px;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g14.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g15.jpg" style="margin-top: 8px;border-radius: 10px;height: 350px;">
+                    </div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g16.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g17.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g18.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g19.jpg" style="margin-top: 8px;border-radius: 10px;"></div>
+                    <div class="box" data-aos="zoom-in"><img src="css/img/g20.jpg" style="margin-top: 8px;border-radius: 10px;height: 376px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <!-- bg banner -->
+     <section class="bg">
+        <div class="bg-text">
+            <h6>SUMMER ON SALE</h6>
+            <h4>50% & 10% OFF <br> NEW ARRIVAL</h4>
+            <a href="HSaddcard.html" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+
+
+
+    <!-- banner  -->
+
+    <section class="banner-container">
+
+        <div class="banner" >
+            <img src="image/banner-1.jpg" >
+            <div class="content">
+                <span>Limited Offer</span>
+                <h3>Upto 50% & 10% Off</h3>
+                <a href="HSaddcard.html" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/banner-2.jpg" alt="">
+            <div class="content">
+                <span>Limited Offer</span>
+                <h3>Upto 50% &  10% Off</h3>
+                <a href="HSaddcard.html" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/banner-3.jpg" alt="">
+            <div class="content">
+                <span>Limited Offer</span>
+                <h3>Upto 50% & 10% Off</h3>
+                <a href="HSaddcard.html" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner section ends -->
+
+
+
+
+
+
+
+    <!-- footer section start  -->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>HomeStyler</h3>
+                <a href="HShome.html"> <i class="ri-arrow-right-line"></i> Home </a>
+                <a href="HSabout.html"> <i class="ri-arrow-right-line"></i> About </a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Display </a>
+                <a href="HSfeedback.html"> <i class="ri-arrow-right-line"></i> Feedback </a>
+                <a href="HScontact.html"> <i class="ri-arrow-right-line"></i> Contact </a>
+                
+            </div>
+
+            <div class="box">
+                <h3>Our Categorie's</h3>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Furniture Categorie's </a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Lighting Categorie's</a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Decor Categorie's </a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i>Kitchen Categorie's</a>
+                <a href="HSdisplay.html"> <i class="ri-arrow-right-line"></i> Bathroom Categorie's</a>
+            </div>
+
+            <div class="box">
+                <h3>Contect Us</h3>
+                <a href="https://www.facebook.com/"> <i class="ri-facebook-fill"></i> Facebook </a>
+                <a href="https://twitter.com/"> <i class="ri-twitter-fill"></i> twitter </a>
+                <a href="https://www.instagram.com/"> <i class="ri-instagram-fill"></i> Instagram </a>
+                <a href="https://www.pinterest.com/"> <i class="ri-pinterest-fill"></i> Pinterest </a>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115822.68871776278!2d66.91351319726562!3d24.8823197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fee69fbbebd%3A0xae613ba77324eae4!2sDecoratium!5e0!3m2!1sen!2s!4v1727164524654!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </form>
+
+                </div>
+            </section>
+
+    <section class="credit">
+        <h1 style="margin-bottom: 20px;">Thank you</h1>
+        "for visiting HomeStyler! We're always delighted to have you  <br>here and hope you find every idea you need to style your dream home!" 
+    </section>
+    <!-- footer section end  -->
+
+
+    <!-- custom js file link  -->
+    <script src="js/data 2.js"></script>
+    <script src="js/HShome.js"></script>
+        
+</body>
+</html>

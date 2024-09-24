@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeStyler</title>
+    <link rel="stylesheet" href="css/HScontact.css">
+    <link rel="icon" type="image/jpg" href="css/img/HS favicon.png">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+<div class="contact-form">
+    <div class="container-6">
+        <div class="ac" data-aos="zoom-in"><a href="HScontact.html" style="margin-bottom: 40px;"><h1>Contact Us</h1></a></div>
+        <a href="HShome.html"><i class="fa-duotone fa-solid fa-angles-left" style="margin-left: 345px;margin-top: 7px;font-size: 17px;">Back</i></a>
+
+        <div class="main">
+            <div class="content-1">
+               <h2 style="margin-bottom: 40px;">Welcome!</h2>
+                
+                    <input type="text"  id="name" placeholder="Enter Your Name" onkeyup="validation()">
+                    <span id="nameerror"></span>
+                  
+                    <input type="email" id="email" placeholder="Enter Your Email" onkeyup="validation()">
+                    <span id="emailerror"></span>
+                    <textarea id="textarea" placeholder="Your Message" onkeyup="validation()"></textarea>
+                    <span id="textareaerror"></span>                   
+                    <div id="btn">
+                        <button class="bttn" onclick="submitForm()">Submit</button>
+                    </div>
+                
+            </div>
+            <div class="form-img" style="background-image: url(css/img/contact.jfif);">
+                
+            </div>
+        </div>
+        <div class="form-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64510072.40109175!2d-11.387703107754927!3d9.299348452332568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fed1ec733d51%3A0x27204b2e34f97b0b!2sHomestyler!5e0!3m2!1sen!2s!4v1726762692776!5m2!1sen!2s" width="600" height="450" style="border:0;margin-left: 30px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+    </div>
+</div> 
+
+
+
+
+
+<!-- rejection contact form start js -->
+<script>
+    function validation() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var textarea = document.getElementById("textarea").value;
+
+        var nameCheck = /^[a-zA-Z ]{3,}$/;
+        var emailCheck = /^[a-zA-Z0-9._*]{3,}@[a-zA-Z]{5,}.[a-zA-Z]{2,3}$/;
+        var textareaCheck = /^[a-zA-Z ]{10,}$/;
+
+        if (name.match(nameCheck)) {
+            document.getElementById("nameerror").innerText = "Great";
+            document.getElementById("nameerror").style.color = "green";
+        } else {
+            document.getElementById("nameerror").innerText = "Please Correct Only Alphabets";
+            document.getElementById("nameerror").style.color = "red";
+        }
+
+        if (email.match(emailCheck)) {
+            document.getElementById("emailerror").innerText = "Great";
+            document.getElementById("emailerror").style.color = "green";
+        } else {
+            document.getElementById("emailerror").innerText = "Please Correct Your Pattern";
+            document.getElementById("emailerror").style.color = "red";
+        }
+        if(textarea.match(textareaCheck))
+        {
+            document.getElementById("textareaerror").innerText = "Great";
+            document.getElementById("textareaerror").style.color = "green";
+        }
+        else
+        {
+            document.getElementById("textareaerror").innerText = "Please Few Words";
+            document.getElementById("textareaerror").style.color = "red";
+        }
+    }
+
+    function submitForm() {
+        var nameIsValid = document.getElementById("nameerror").innerText === "Great";
+        var emailIsValid = document.getElementById("emailerror").innerText === "Great";
+        var textareaIsValid = document.getElementById("textareaerror").innerText === "Great";
+
+        if (nameIsValid && emailIsValid && textareaIsValid) {
+            // Use SweetAlert to show a modal
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your form is successfully.',
+                icon: 'success',
+                confirmButtonText: 'Got it'
+            });
+        } else {
+            // Use SweetAlert to show an error message
+            Swal.fire({
+                title: 'Incomplete Values',
+                text: 'Please! complete the incomplete value.',
+                icon: 'error',
+                confirmButtonText: 'Got it'
+            });
+        }
+    }
+</script>
+<!-- rejection contact form end js -->
+
+
+<!-- j.s start -->
+<!-- swetalert modal link-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- aos link -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+
+</script>
+<!-- j.s end -->
+</body>
+</html>

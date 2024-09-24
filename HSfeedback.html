@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeStyler</title>
+    <link rel="stylesheet" href="css/HSfeedback.css">
+    <link rel="icon" type="image/jpg" href="css/img/HS favicon.png">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ 
+
+
+<!-- react feadback start -->
+<div class="h-fb" id="feedback">
+   <a href="#"><h1>Feedback Here!</h1></a> </div>
+   <a href="HShome.html"><i class="fa-duotone fa-solid fa-angles-left" style="margin-left: 695px;margin-top: 7px;font-size: 17px;">Back</i></a>
+
+<div class="wrapper">
+    <h3>Share your Today Feedback</h3>
+    
+        <div class="rating">
+            <input type="number" name="rating" hidden>
+            <i class='bx bx-star star' style="--i: 0;"></i>
+            <i class='bx bx-star star' style="--i: 1;"></i>
+            <i class='bx bx-star star' style="--i: 2;"></i>
+            <i class='bx bx-star star' style="--i: 3;"></i>
+            <i class='bx bx-star star' style="--i: 4;"></i>
+        </div>
+        <textarea id="textarea" cols="30" rows="5" placeholder="Your opinion..."  placeholder="Your Message" onkeyup="validation()"></textarea><br>
+        <span id="textareaerror"></span>
+        <div class="btn-group">
+            <button type="submit" class="btn submit" onclick="submitForm()">Submit</button>
+        </div>
+   
+</div>
+</div>
+<!-- react feadback end-->
+
+
+<!-- rejection feedback form form start js -->
+<script>
+    function validation() {
+        var textarea = document.getElementById("textarea").value;
+
+        var textareaCheck = /^[a-zA-Z ]{10,}$/;
+
+        if(textarea.match(textareaCheck))
+        {
+            document.getElementById("textareaerror").innerText = "Great";
+            document.getElementById("textareaerror").style.color = "green";
+        }
+        else
+        {
+            document.getElementById("textareaerror").innerText = "Please Few Words";
+            document.getElementById("textareaerror").style.color = "red";
+        }
+    } 
+
+    function submitForm() {
+        var textareaIsValid = document.getElementById("textareaerror").innerText === "Great";
+
+        if (textareaIsValid) {
+            // Use SweetAlert to show a modal
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your form is successfully.',
+                icon: 'success',
+                confirmButtonText: 'Got it'
+            });
+        } else {
+            // Use SweetAlert to show an error message
+            Swal.fire({
+                title: 'Incomplete Values',
+                text: 'Please! complete the incomplete value.',
+                icon: 'error',
+                confirmButtonText: 'Got it'
+            });
+        }
+    }
+    </script>
+
+
+<!-- j.s start -->
+<!-- swetalert modal link-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- aos link -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+
+//   react feadback.
+  const allStar = document.querySelectorAll('.rating .star')
+const ratingValue = document.querySelector('.rating input')
+
+allStar.forEach((item, idx)=> {
+	item.addEventListener('click', function () {
+		let click = 0
+		ratingValue.value = idx + 1
+
+		allStar.forEach(i=> {
+			i.classList.replace('bxs-star', 'bx-star')
+			i.classList.remove('active')
+		})
+		for(let i=0; i<allStar.length; i++) {
+			if(i <= idx) {
+				allStar[i].classList.replace('bx-star', 'bxs-star')
+				allStar[i].classList.add('active')
+			} else {
+				allStar[i].style.setProperty('--i', click)
+				click++
+			}
+		}
+	})
+})
+//   react feadback. end
+
+</script>
+<!-- j.s end -->
+</body>
+</html>

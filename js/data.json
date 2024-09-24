@@ -1,0 +1,35 @@
+[
+      {
+        "category": "decoration",
+        "image": "css/img/p1.jpeg"
+      },
+      {
+        "category": "accessory",
+        "image": "css/img/p2.jpeg"
+      },
+      {
+        "category": "decoration",
+        "image": "css/img/p3.jpeg"
+      },
+      {
+        "category": "accessory",
+        "image": "css/img/p4.jpeg"
+      },
+      {
+        "category": "accessory",
+        "image": "css/img/p5.jpeg"
+      },
+      {
+        "category": "furniture",
+        "image": "css/img/p6.jpeg"
+      },
+      {
+        "category": "accessory",
+        "image": "css/img/p7.jpeg"
+      },
+      {
+        "category": "accessory",
+        "image": "css/img/p8.jpeg"
+      }
+]
+
